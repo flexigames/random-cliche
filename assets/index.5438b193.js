@@ -1,4 +1,4 @@
-export default `'tis the season
+(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))h(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const n of t.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&h(n)}).observe(document,{childList:!0,subtree:!0});function r(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerpolicy&&(t.referrerPolicy=e.referrerpolicy),e.crossorigin==="use-credentials"?t.credentials="include":e.crossorigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function h(e){if(e.ep)return;e.ep=!0;const t=r(e);fetch(e.href,t)}})();const s=`'tis the season
 (A) day late and a dollar short
 (A) dog's life
 (A) drop in the bucket
@@ -2225,7 +2225,7 @@ My mind's eye
 My stomach is tied up in knots
 My two cents
 My way or the highway
-Ménage à trois,
+M\xE9nage \xE0 trois,
 Nail your colors to the mast
 Naked as a jaybird
 Naked as the day you were born
@@ -2290,7 +2290,7 @@ No strings attached
 No time like the present
 No use crying over spilled milk
 No way (or why) on god's green earth
-No way, josé,
+No way, jos\xE9,
 Nod off
 None too pleased
 None of your business
@@ -3966,4 +3966,5 @@ Your place or mine
 Yuppie
 Zigged when he should have zagged
 Zip it!
-Zip your lip`.split("\n");
+Zip your lip`.split(`
+`);i();document.querySelector(".main").addEventListener("submit",o=>(o.preventDefault(),i(),!1));document.addEventListener("keypress",o=>{o.key==="Enter"&&i()});function i(){document.getElementById("quote").innerHTML=s[Math.floor(Math.random()*s.length)]}
